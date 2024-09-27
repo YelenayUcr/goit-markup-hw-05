@@ -97,14 +97,11 @@ header {
   letter-spacing: 2%;
   margin-right: 10px;
   position: relative;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title:hover {
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title:active::after {
@@ -115,7 +112,7 @@ header {
   position: absolute;
   bottom: -22px;
   left: 0;
-  transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-div {
@@ -125,10 +122,7 @@ header {
   line-height: 24px;
   letter-spacing: 2%;
   color: #434455;
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -152,7 +146,7 @@ header {
 
 .address-div:hover {
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .ul-about1 {
@@ -160,6 +154,7 @@ header {
   gap: 40px;
   margin-right: 332px;
   position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-li {
@@ -179,7 +174,7 @@ header {
 
 .ul-about1:hover {
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -192,12 +187,12 @@ header {
   line-height: 1.5em;
   letter-spacing: 0.02em;
   cursor: pointer;
-
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address:hover {
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 body {
@@ -297,7 +292,6 @@ body {
 
 .button-about:hover {
   background-color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section {
@@ -338,7 +332,6 @@ body {
   box-shadow: 0px 1px 1px 0px #2E2F4229;
 
   box-shadow: 0px 1px 6px 0px #2E2F4214;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -354,8 +347,6 @@ body {
   box-shadow: 0px 1px 6px 0px #2e2f4214;
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 ul {
@@ -460,8 +451,6 @@ ul {
   border: 1px 0px 0px 0px;
   opacity: 0px;
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .icon-div {
@@ -485,13 +474,11 @@ ul {
   left: 0;
   right: 0;
   opacity: 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: opacity;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-4-hover:hover {
   opacity: 1;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-4-text {
@@ -510,15 +497,13 @@ ul {
 .our-li:hover {
   background: #ffffff;
   box-shadow: 2px 2px 0px 0px #2e2f4214;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-li {
   position: relative;
   display: flex;
   flex-direction: column;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: box-shadow;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-p {
@@ -577,9 +562,6 @@ ul {
   letter-spacing: 0.03em;
 
 }
-
-
-
 .footer-about {
   background-color: #2E2F42;
   color: #FFFFFF;
@@ -587,8 +569,6 @@ ul {
   padding: 100px 0;
 
 }
-
-
 .footer-li-icon {
   margin-right: 16px;
   margin-bottom: 132px;
@@ -596,79 +576,102 @@ ul {
 
 .footer-icon:hover {
   --color1: #31d0aa;
-  transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--color1, #4D5AE5);
+
+}
+
+.footer-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-icon:hover {
   --color1: #31d0aa;
-  transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--color1, #4D5AE5);
+
+
 }
 
-.footer-label {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  color: white;
-  display: block;
+.portfolio-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-e-mail {
-
+ .footer-form{
+   
   width: 453px;
-  height: 80px;
+    height: 80px;
+   margin-left:674px;
+position: relative;
+ }
+  	.footer-label {
+  	  font-weight: 500;
+  	  font-size: 16px;
+  	  line-height: 24px;
+  	  letter-spacing: 2%;
+  	  color: white;
+  	  display: block;
+  	}
+  
+  	.footer-e-mail {
+      position: absolute;
+  	  width: 453px;
+  	  height: 80px;
 
-
-
-}
-
-.footer-input {
-  width: 264px;
-  height: 40px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-  letter-spacing: 4%;
-  color: white;
-  background-color: transparent;
-  border: 1px, solid, white;
-  border-radius: 4px;
-  padding-left: 12px;
-  position: relative;
-  top: 20px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-input::placeholder {
-  color: white;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-  letter-spacing: 4%;
-  width: 36px;
-  height: 24px;
-
-}
-
-.button-footer {
-  width: 165px;
-  height: 40px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 4%;
-  cursor: pointer;
-  color: white;
-  background-color: #4d5ae5;
-  border: none;
-  border-radius: 4px;
-  align-items: center;
-  justify-content: center;
-  padding-right: 50px;
-  position: relative;
-  top: 20px;
-  left: 10px;
-  font-family: Roboto;
-
-}
+  	}
+  
+  	.footer-input {
+  	  width: 264px;
+  	  height: 40px;
+  	  font-weight: 400;
+  	  font-size: 12px;
+  	  line-height: 24px;
+  	  letter-spacing: 4%;
+  	  color: white;
+  	  background-color: transparent;
+  	  border: 1px, solid, white;
+  	  border-radius: 4px;
+  	  padding-left: 12px;
+  	  position: relative;
+  	  top: 20px;
+  	  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  	  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  	}
+  
+  	.footer-input::placeholder {
+  	  color: white;
+  	  font-weight: 400;
+  	  font-size: 12px;
+  	  line-height: 24px;
+  	  letter-spacing: 4%;
+  	  width: 36px;
+  	  height: 24px;
+  
+  	}
+  
+  	.button-footer {
+  	  width: 165px;
+  	  height: 40px;
+  	  font-weight: 500;
+  	  font-size: 16px;
+  	  line-height: 24px;
+  	  letter-spacing: 4%;
+  	  cursor: pointer;
+  	  color: white;
+  	  background-color: #4d5ae5;
+  	  border: none;
+  	  border-radius: 4px;
+  	  align-items: center;
+  	  justify-content: center;
+  	  padding-right: 50px;
+  	  position: relative;
+  	  top: 20px;
+  	  left: 10px;
+  	  font-family: Roboto;
+  
+  	}
+  
+  	.footer-button-icon {
+  
+  	  position: relative;
+  	  top: 28px;
+  	  right: 50px;
+  
+  	}
