@@ -685,3 +685,8 @@ ul {
       width: 24px;
       height: 24px;     
     }
+    .main-form{
+      position: sticky;
+      display: flex;
+      flex-direction: column;
+    }
